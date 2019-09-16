@@ -55,7 +55,6 @@ public class User implements Serializable {
 	
 	/* No está en la base de datos, es omitido por hibernate */
 	@Transient
-	@NotBlank
 	private String confirmPassword;
 	
 	@ManyToMany(fetch=FetchType.LAZY)
